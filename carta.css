@@ -1,0 +1,113 @@
+body {
+  background-color: #f3aacb;
+  margin: 0;
+  padding: 0;
+  font-family: 'Patrick Hand', cursive;
+  overflow-x: hidden;
+  padding-bottom: 100px;
+}
+
+.hoja {
+  position: relative;
+  max-width: 600px;
+  width: 90%;
+  margin: 60px auto;
+  padding: 40px 30px;
+  background-color: #fffef8;
+  background-image: repeating-linear-gradient(
+    to bottom,
+    transparent 0px,
+    transparent 27px,
+    rgba(212, 36, 189, 0.25) 28px,
+    transparent 29px
+  );
+  border-left: 5px solid rgba(255, 0, 0, 0.2);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  line-height: 1.7em;
+  font-size: 1.2em;
+  color: #ee47ac;
+  border-radius: 10px;
+  text-shadow: 2px 2px 5px rgba(207, 93, 202, 0.4);
+}
+
+/* Posicionar los corazones dentro de .hoja */
+.corazon,
+.corazon2,
+.corazon3,
+.corazon4 {
+  width: 14%;
+  max-width: 80px;
+  position: absolute;
+  z-index: 1;
+}
+
+.corazon {
+  top: -20px;
+  left: -20px;
+}
+
+.corazon2 {
+  top: -20px;
+  right: -20px;
+}
+
+.corazon3 {
+  bottom: -20px;
+  right: -20px;
+}
+
+.corazon4 {
+  bottom: -20px;
+  left: -20px;
+}
+
+/* Ajustes para tablets y celulares */
+@media (max-width: 768px) {
+  .hoja {
+    font-size: 1em;
+    line-height: 1.65em;
+    padding: 30px 25px;
+    background-image: repeating-linear-gradient(
+      to bottom,
+      transparent 0px,
+      transparent 25px,
+      rgba(212, 36, 189, 0.25) 26px,
+      transparent 27px
+    );
+  }
+
+  .corazon,
+  .corazon2,
+  .corazon3,
+  .corazon4 {
+    width: 16%;
+    max-width: 60px;
+  }
+}
+
+@media (max-width: 400px) {
+  .hoja {
+    font-size: 0.95em;
+    line-height: 1.6em;
+    padding: 25px 20px;
+    background-image: repeating-linear-gradient(
+      to bottom,
+      transparent 0px,
+      transparent 24px,
+      rgba(212, 36, 189, 0.25) 25px,
+      transparent 26px
+    );
+  }
+
+  .corazon,
+  .corazon2,
+  .corazon3,
+  .corazon4 {
+    width: 18%;
+    max-width: 55px;
+  }
+
+  body {
+    padding-bottom: 130px;
+  }
+}

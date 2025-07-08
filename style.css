@@ -1,0 +1,126 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+@font-face {
+  font-family: 'Emily';
+  src: url('./fonts/emily.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body{
+  background-color: #f3aacb;
+  font-family: 'Emily', cursive, sans-serif;
+  overflow-x: hidden;
+  padding-bottom: 100px;
+}
+.tit{
+  color: #fe0079;
+  text-align: center;
+  font-size: 2.5rem;
+  text-shadow: 3px 3px 0.4px #86003f;
+  margin-top: 20px;
+  transition: 0.3s ease-in-out;
+  caret-color: transparent;
+}
+
+.tit:hover{
+  transform: scale(1.1);
+}
+
+.imagenes{
+  position: relative;
+  width: 90%;
+  max-width: 390px;
+  height: 520px;
+  margin: 40px auto;
+}
+
+.imagenes img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  opacity: 0;
+  border-radius: 20px;
+  border: 5px solid rgb(236, 100, 157);
+  caret-color: transparent;
+}
+
+.img1{ animation: mostrar1 45s ease-in-out infinite; animation-delay: 0s; }
+.img2{ animation: mostrar1 45s ease-in-out infinite; animation-delay: 3s; }
+.img3{ animation: mostrar1 45s ease-in-out infinite; animation-delay: 6s; }
+.img4{ animation: mostrar1 45s ease-in-out infinite; animation-delay: 9s; }
+.img5{ animation: mostrar1 45s ease-in-out infinite; animation-delay: 12s; }
+.img6{ animation: mostrar1 45s ease-in-out infinite; animation-delay: 15s; }
+.img7{ animation: mostrar1 45s ease-in-out infinite; animation-delay: 18s; }
+.img8{ animation: mostrar1 45s ease-in-out infinite; animation-delay: 21s; }
+.img9{ animation: mostrar1 45s ease-in-out infinite; animation-delay: 24s; }
+.img10{ animation: mostrar1 45s ease-in-out infinite; animation-delay: 27s; }
+.img11{ animation: mostrar1 45s ease-in-out infinite; animation-delay: 30s; }
+.img12{ animation: mostrar1 45s ease-in-out infinite; animation-delay: 33s; }
+.img13{ animation: mostrar1 45s ease-in-out infinite; animation-delay: 36s; }
+.img14{ animation: mostrar1 45s ease-in-out infinite; animation-delay: 39s; }
+.img15{ animation: mostrar1 45s ease-in-out infinite; animation-delay: 42s; }
+
+@keyframes mostrar1{
+  0%{ opacity: 0; transform: scale(1); filter: blur(10px); }
+  1.5%{ opacity: 1; transform: scale(1.03); filter: blur(0); }
+  5.1%{ opacity: 1; transform: scale(1.03); filter: blur(0); }
+  6.6%{ opacity: 0; transform: scale(1); filter: blur(10px); }
+  100%{ opacity: 0; transform: scale(1); filter: blur(10px); }
+}
+
+.peppaimg,
+.ariana,
+.emi{
+  width: 45%;
+  max-width: 150px;
+  display: block;
+  margin: 15px auto;
+  animation: mostrar2 1.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  caret-color: transparent;
+}
+
+.peppaimg:hover,
+.ariana:hover,
+.emi:hover{
+  transform: scale(1.1);
+}
+
+@keyframes mostrar2{
+  0%{ opacity: 0; filter: blur(10px); transform: translateY(-55px); }
+  90%{ opacity: 1; filter: blur(0); transform: translateY(0); }
+  100%{ opacity: 1; filter: blur(0); transform: translateY(0); }
+}
+
+.carta{
+  display: block;
+  margin: 30px auto;
+  color: rgb(199, 6, 6);
+  font-size: 3rem;
+  text-decoration: underline 3px solid rgb(199, 6, 6);
+  transition: 0.3s ease-in-out;
+  animation: mostrar2 1.3s ease-in-out;
+  text-align: center;
+  width: fit-content;
+}
+
+.carta:hover{
+  transform: scale(1.2);
+}
+
+@media (max-width: 500px){
+  .tit{
+    font-size: 2rem;
+  }
+  .carta{
+    font-size: 1.5rem;
+  }
+  .imagenes{
+    height: 400px;
+  }
+}
