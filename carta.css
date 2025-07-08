@@ -66,14 +66,14 @@ body {
   .hoja {
     font-size: 1em;
     padding: 30px 20px;
-    width: 95%;
-    line-height: 25px;
+    width: 70%;
+    line-height: 24px;
     background-image: repeating-linear-gradient(
       to bottom,
       transparent 0px,
-      transparent 25px,
+      transparent 24px,
       rgba(212, 36, 189, 0.25) 26px,
-      transparent 27px
+      transparent 26px
     );
   }
 
